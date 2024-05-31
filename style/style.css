@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #797A7A; */
+}
+header{
+    position: relative;
+    width: 100vw;
+    background-color:#35431D;
+    height: 60px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;    
+}
+.section{
+    height: calc(100vh - 60px);
+}
+
+header nav ul{
+    display: flex;
+    /* justify-content: space-between; */
+    list-style: none;
+    gap: 20px;
+    color: #fff;
+    text-decoration: none;
+    
+
+
+}
+.responsiveLinks{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 65px;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background: black;
+    z-index: 40;
+    padding: 10px;
+
+}
+.responsiveLinks ul{
+    width: 100%;
+    padding:0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    height: 100%;
+}
+.baniere{
+    height: calc(100vh - 60px);
+    position: relative;
+    background-image:url("../images/ouverture1.png") ;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baniere .textContent{
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(29, 29, 29, 0.677);
+}
+.baniere .textContent h1{
+    font-size: 3rem;
+}
+.baniere .textContent h3{
+    font-size: 1.3rem;
+    font-weight: 10;
+    
+}
+.ouverture{
+    flex-basis: 65%;
+    background-image:url("../images/ouverture1.png") ;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lb{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+    width: 100%;
+    height: 100%;
+}
+.lb .laboratoire{
+    flex-basis: 50%;
+    background-image:url("../images/laboratoire1.png") ;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.lb .bibliotheque{
+    flex-basis: 50%;
+    background-image:url("../images/bibliothequejpg1.png") ;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.baniere .textContent p{
+    margin-top: 100px;
+    font-size: 1.2rem;
+    color: white;
+}
+.why{
+    /* padding: 20px; */
+}
+.cards{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33%;
+    width: 100%;
+    border: solid;
+    height: 250px;
+    background-color: #35431D;
+    padding: 20px;
+    border-radius: 0 20px 0 20px;
+}
+.icon{
+    width: 60px;
+    height:60px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #35431D;
+    text-align: center;
+    height: 50px;
+    text-transform:uppercase ;
+    color: white;
+}
+.bottom{
+    height: 35px;
+    width: 35px;
+    
+}
+.last{
+    justify-content: center;
+    display:flex;
+    padding-top: 20px;
+    align-items: center;
+}
+.back{
+    background-image: url(/images/etude.jpg);
+    /* background-color: rgba(29, 29, 29, 0.677);  */
+    width: 100vw;
+    height:calc(100vh - 60px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.form{
+    /* background-color: red; */
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+form{
+    min-width: 200px;
+    max-width: 400px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    flex-direction:column ;
+    background-color: #35431D;
+    margin: 0px;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+input{
+    padding: 10px;
+    margin: 5px;
+    width: 90%;
+    border-radius:10px;
+    padding-right: 100px;
+}
+button{
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border-radius:10px;
+
+}
+.back.form p{
+    font-size: 1,3rem;
+    font-weight: 10;
+}
+.form form p{
+    color: #fff;
+    text-align: center;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.font{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: calc(100vh - 60px);
+}
+.gauche{
+    background-color: #837e7e;
+    flex-basis: 48%;
+    width: 100%;
+    border: solid;
+    height: 100%;
+    /* background-color: #35431D; */
+    padding: 20px;
+    border-radius:20px ;
+}
+.active{
+    text-decoration: underline;
+    color: greenyellow;
+    font-weight: bold;
+}
+
+.un{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.en{
+    /* background-color: #837e7e; */
+    width: 70%;
+    border: solid;
+    height: 100%;
+    background-color: #797A79;
+    padding: 20px ;
+    border-radius:20px ;
+}
+.container.section{
+    background-color: #FFFF;
+
+    
+    
+}
+.container.section p{
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flexbg{
+    display: flex;
+}
+.menu{
+    width: 40px;
+    height: 40px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.menu span{
+    height: 5px;
+    width: 80%;
+    /* margin: auto; */
+    background-color: #000;
+}
+textarea{
+    padding: 10px;
+    margin: 5px;
+    width: 90%;
+    border-radius:10px;
+    padding-right: 100px;
+    height: 80%;
+    resize: none;
+}
+ .formcontact{
+    background-image: url(/images/examen-removebg-preview.png);
+    background-color: rgba(7, 7, 7, 0.677); 
+    width: 100vw;
+    height:calc(100vh - 60px);
+    background-size: cover;
+    background-repeat: no-repeat; 
+} 
+@media(max-width:768px){
+    header nav{
+        display:none;
+    }
+    header .menu{
+        display: flex;
+    }
+    .responsiveLinks{
+        display: flex;
+    }
+    .row, .font{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    [class*="col-"],.gauche{
+        flex-basis: 100% ;
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        flex-basis: 100% ;
+    }
+    .baniere .textContent h1{
+        font-size: 1.3rem;
+        font-weight: 10;
+    }
+    .baniere .textContent h3{
+        font-size: 0.8rem;
+        font-weight: 10;
+    }
+    .baniere .textContent p{
+        font-size: 0.7rem;
+    }
+    .container{
+        width: 90%;
+    }
+}
+    
+
+
+
+
+
